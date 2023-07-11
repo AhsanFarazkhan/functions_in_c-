@@ -1,0 +1,25 @@
+#include <iostream>
+
+int sqrt(int z);
+using namespace std;
+
+int main()
+ {
+int number;
+cout<<"enter number: ";
+cin>>number;
+
+
+cout<<"the answer is : "<<sqrt(number);
+}
+int sqrt(int z)
+{
+    int x=z;
+    int y=1;
+    while(x>y)
+    {
+        x=(x+y)/2;
+        y=z/x;
+    }
+    return x;
+}

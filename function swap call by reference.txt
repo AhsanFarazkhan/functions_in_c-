@@ -1,0 +1,30 @@
+#include<iostream>
+bool check(int a);
+using namespace std;
+
+int main()
+{
+    int x;
+    cout<<"enter number :";
+    cin>>x;
+    cout<<endl;
+
+
+    if(check(x)==true)
+    {
+    cout<<"even :"<<x;
+    }
+    else
+    {
+        cout<<"odd :"<<x;
+    }
+
+}
+bool check(int a)
+{
+   if(a%2==0)
+       return true;
+       else
+        return false;
+
+}

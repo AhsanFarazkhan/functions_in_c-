@@ -1,0 +1,35 @@
+#include <iostream>
+#include<cmath>
+int power(int x,int y);
+using namespace std;
+
+int main() {
+int base,exponent;
+cout<<"enter base : ";
+cin>>base;
+cout<<"enter exponent :";
+cin>>exponent;
+
+cout<<"the answer is : "<<power(base,exponent);
+}
+
+int power(int x,int y)
+{
+    int result=1;
+
+    if(y>0)
+    {
+for(int i=1;i<=y;i++)
+{
+    result=result*x;
+}
+    }
+    else
+    {
+   for(int i=1;i>y;i--)
+{
+    result=result*x;
+}
+    }
+    return result;
+}

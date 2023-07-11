@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+bool isPerfectNumber(int num) {
+    int sum = 0;
+    for (int i = 1; i < num; i++) {
+        if (num % i == 0)
+            sum += i;
+    }
+    return sum == num;
+}
+
+void printPerfectNumbers(int lowerLimit, int upperLimit) {
+   cout << "Perfect numbers between " << lowerLimit << " and " << upperLimit << ": ";
+    for (int i = lowerLimit; i <= upperLimit; i++) {
+        if (isPerfectNumber(i))
+         cout << i << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int lowerLimit, upperLimit;
+cout << "Enter the lower and upper limits: ";
+cin >> lowerLimit >> upperLimit;
+
+    printPerfectNumbers(lowerLimit, upperLimit);
+
+    return 0;
+}

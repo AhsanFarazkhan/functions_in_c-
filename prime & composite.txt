@@ -1,0 +1,27 @@
+#include<iostream>
+int factorial(int a);
+using namespace std;
+
+int main()
+{
+    int x;
+    cout<<"enter number :";
+    cin>>x;
+    cout<<endl;
+
+
+
+    cout<<"factorial of number "<<x<<" is "<< factorial(x);
+
+}
+int factorial(int a)
+{
+int    fact=1;
+    int i;
+    for(i=1;i<=a;i++)
+    {
+        fact=fact*i;
+
+    }
+    return fact;
+}

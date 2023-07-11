@@ -1,0 +1,44 @@
+#include<iostream>
+bool check(int a);
+using namespace std;
+
+int main()
+{
+    int x;
+    cout<<"enter number :";
+    cin>>x;
+    cout<<endl;
+
+
+    if(check(x)==false)
+    {
+    cout<<"prime"<<x;
+    }
+    else
+    {
+        cout<<"composite :"<<x;
+    }
+
+}
+bool check(int a)
+{
+    int counter=0;
+    for(int i=1;i<=a;i++)
+    {
+
+   if(a%2==0)
+   {
+       counter++;
+    }
+    }
+     if(counter>3)
+       {
+           return true;
+       }
+       else
+       {
+           return false;
+       }
+
+
+}

@@ -1,0 +1,30 @@
+#include<iostream>
+int swape(int &a,int &b);
+using namespace std;
+
+int main()
+{
+    int x,y;
+    cout<<"enter number 1 (before swap) :";
+    cin>>x;
+    cout<<endl;
+    cout<<"enter number 2 (before swap):";
+    cin>>y;
+    cout<<endl;
+    swape(x,y);
+    cout<<"enter number 1 (after swap) :"<<x;
+
+    cout<<endl;
+    cout<<"enter number 2 (after swap):"<<y;
+
+    cout<<endl;
+}
+int swape(int &a,int &b)
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+
+
+}
